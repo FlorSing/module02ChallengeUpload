@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  line-height: 1.5;
+}
+
+header{
+  background-image: url("../images/02-hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+h1{
+  font-size: 3.5em;
+  color: bisque;
+  text-shadow: 2px 2px 5px rgb(232, 228, 28);
+}
+
+.topright {
+  display: flex;
+}
+
+.topright a{
+  padding: 15px;
+    align-items: center;
+  color: bisque;
+}
+
+.hero-banner{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: rgb(5, 82, 15);
+  opacity: 0.8;
+
+}
+.hero-banner h2{
+  font-size: 2em;
+  color:bisque;
+  
+}
+
+#about{
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;  
+}
+
+
+#title1{
+  padding: 10px;
+}
+
+h3{
+  color:bisque;
+  text-align: center;
+  background-color: rgb(0,0,0,0.7);
+  height: 50px;
+  margin: 10;
+}
+/*
+.page-section{
+  height: 500px;
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "title1 title1"
+    "sample1 sample1"
+    "sample2 sample3"
+    "sample4 sample5"
+  ;
+}
+#title1{
+grid-area: title1;
+}
+
+.sample1{
+  grid-area: sample1;
+}
+
+.sample2{
+  grid-area: sample2;
+}
+.sample3{
+  grid-area: sample3;
+}
+.sample4{
+  grid-area: sample4;
+}
+.sample5{
+  grid-area: sample5;
+}
+
+.sample1{
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+.sample2{
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+.sample3{
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+.sample4{
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+.sample5{
+  background-color: chocolate;
+}
+
+*/
+.sample1, .sample2, .sample3, .sample4, .sample5{
+  background-position: center;
+  background-size: cover;
+}  
+
+
+.page-section1{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.page-section2{
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.page-section3{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.sample1{
+  flex-grow: 2;
+  background-image: url("../images/02-portfolio-1.jpg");
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 400px;
+  width: auto;
+  
+}
+#work a{
+  color: bisque;
+  align-items: center;
+}
+
+.sample2{
+  flex-grow: 1;
+  background-image: url("../images/02-portfolio-2.jpg");
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: auto;
+}
+.sample3{
+  flex-grow: 1;
+  background-image: url("../images/02-portfolio-3.jpg");
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: auto;
+
+}
+.sample4{
+  flex-grow: 1;
+  background-image: url("../images/02-portfolio-4.jpg");
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: auto;
+
+}
+.sample5{
+  flex-grow: 1;
+  background-color: chocolate;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: auto;
+
+}
+
+
+#contact{
+  margin: 15px;
+  padding: 15px;
+  color: bisque;
+  background-color: rgb(9, 71, 71);
+}
+
+.contactlink{
+  display: flex;
+  background-color: rgb(0,0,0,0.7);
+}
+
+.contactlink a{
+  color: bisque;
+  align-items: center;
+  padding: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #work{
+    flex-direction: column;
+
+  }
+}
+
